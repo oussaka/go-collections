@@ -11,6 +11,7 @@ func Map[T, R any](slice []T, predicate func(T) R) []R {
 	}
 	return result
 }
+
 func Find[T any](slice []T, predicate func(T) bool) (T, error) {
 	var notFound T
 	for i := range slice {
